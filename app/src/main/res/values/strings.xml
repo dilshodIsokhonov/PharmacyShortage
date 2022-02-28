@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PharmacyShortage</string>
+    <string name="shortage">Shortage</string>
+    <string name="add_shortage">Add shortage</string>
+    <string name="delete">delete</string>
+    <string name="save">save</string>
+    <string name="pin_to_top">Pin to Top</string>
+    <string name="default_kind">Default</string>
+    <string name="tabs">Tabs</string>
+    <string name="image">Image</string>
+    <string name="liquid">Liquid</string>
+    <string name="tablet">Tablet</string>
+    <string name="capsules">Capsules</string>
+    <string name="topical_medicines">Topical medicine</string>
+    <string name="suppositories">Suppositories</string>
+    <string name="drops">Drops</string>
+    <string name="inhalers">Inhalers</string>
+    <string name="injections">Injections</string>
+    <string name="implants_or_patches">Implants or Patches</string>
+    <string name="choose_type">Choose Type</string>
+    <string name="sum">sum</string>
+    <string name="previous_price">Price</string>
+    <string name="importance_default_kind">Importance: Default</string>
+    <string name="importance_top">Importance: Top</string>
+    <string name="user_info">User</string>
+    <string name="generic_text">%d sum</string>
+    <string name="fill_blanks">Fill the Blanks</string>
+    <string name="importance">Importance: %s</string>
+    <string name="price">Previous Price: %s</string>
+    <string name="type">Type: %s</string>
+    <string name="previous_price_optional">Price(optional)</string>
+</resources>

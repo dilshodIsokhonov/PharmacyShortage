@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PharmacyShortage" parent="Theme.Material3.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#3C1773</item>
+        <item name="colorPrimaryVariant">#EADDFF</item>
+<!--        <item name="colorOnPrimary">@color/white</item>-->
+        <!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+
+        <item name="textInputStyle">@style/Widget.PharmacyShortage.TextInputLayout</item>
+        <item name="chipGroupStyle">@style/Widget.Material3.ChipGroup</item>
+        <item name="chipStyle">@style/Widget.PharmacyShortage.Chip.Filter.Elevated</item>
+        <item name="tabStyle">@style/Widget.Material3.TabLayout.Secondary</item>
+        <item name="fontFamily">@font/redressed2</item>
+    </style>
+
+    <style name="Theme.PharmacyShortage" parent="Base.Theme.PharmacyShortage"/>
+
+    <style name="Theme.PharmacyShortage.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.PharmacyShortage.Chip.Filter.Elevated" parent="@style/Widget.Material3.Chip.Filter.Elevated">
+        <item name="fontFamily">@font/redressed</item>
+    </style>
+    <style name="Theme.PharmacyShortage.AppBarOverlay" parent="ThemeOverlay.Material3.Dark"/>
+
+    <style name="Theme.PharmacyShortage.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextAppearance.PharmacyShortage.Toolbar.Text" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="Widget.PharmacyShortage.TextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">?attr/colorSurface</item>
+    </style>
+</resources>

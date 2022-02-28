@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PharmacyShortage" parent="Theme.Material3.Dark">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">#533690</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/Widget.PharmacyShortage.TextInputLayout</item>
+        <item name="chipGroupStyle">@style/Widget.Material3.ChipGroup</item>
+        <item name="chipStyle">@style/Widget.Material3.Chip.Filter.Elevated</item>
+        <item name="tabStyle">@style/Widget.Material3.TabLayout.Secondary</item>
+    </style>
+</resources>

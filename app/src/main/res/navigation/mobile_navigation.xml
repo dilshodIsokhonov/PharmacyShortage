@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/shortageFragment">
+
+    <fragment
+        android:id="@+id/shortageFragment"
+        android:name="com.example.pharmacyshortage.ui.ShortageFragment"
+        android:label="Shortage List"
+        tools:layout="@layout/fragment_shortage">
+        <action
+            android:id="@+id/action_shortageFragment_to_shortageDetailFragment"
+            app:destination="@id/shortageDetailFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_shortageFragment_to_addShortageFragment"
+            app:destination="@id/addShortageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shortageDetailFragment"
+        android:name="com.example.pharmacyshortage.ui.ShortageDetailFragment"
+        android:label="Shortage Detail"
+        tools:layout="@layout/fragment_shortage_detail">
+        <argument
+            android:name="id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_shortageDetailFragment_to_addShortageFragment"
+            app:destination="@id/addShortageFragment" />
+        <action
+            android:id="@+id/action_shortageDetailFragment_to_shortageFragment"
+            app:destination="@id/shortageFragment"
+            app:popUpTo="@id/shortageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addShortageFragment"
+        android:name="com.example.pharmacyshortage.ui.AddShortageFragment"
+        android:label="Shortage"
+        tools:layout="@layout/fragment_add_shortage">
+        <argument
+            android:name="id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_addShortageFragment_to_shortageFragment"
+            app:destination="@id/shortageFragment"
+            app:popUpTo="@id/shortageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
